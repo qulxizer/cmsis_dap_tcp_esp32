@@ -2,6 +2,17 @@
   "version": 4,
   "configurePresets": [
     {
+      "name": "board_esp32_devkit_v1",
+      "displayName": "ESP32 DevKit V1 board",
+      "description": "Builds for the standard ESP32 DevKit V1 board",
+      "binaryDir": "build/build_esp32_devkit_v1",
+      "cacheVariables": {
+        "IDF_TARGET": "esp32",
+        "SDKCONFIG": "build/build_esp32_devkit_v1/sdkconfig",
+        "SDKCONFIG_DEFAULTS": "sdkconfig.defaults;sdkconfig.board_esp32_devkit_v1"
+      }
+    },
+    {
       "name": "board_esp32s3_devkit_c1",
       "displayName": "Espressif ESP32-S3 Devkit C1 board",
       "description": "Builds for the ESP32S3 Devkit C1 board",
@@ -69,4 +80,3 @@
     }
   ]
 }
-
